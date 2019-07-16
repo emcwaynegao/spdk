@@ -19,10 +19,10 @@
 #include <spdk/stdinc.h>
 #include <spdk/util.h>
 
+#include <iostream>
 
 
-using namespace spdk;
-using namespace nvmfhost;
+
 using namespace std;
 
 
