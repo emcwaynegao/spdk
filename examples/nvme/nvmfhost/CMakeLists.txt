@@ -13,5 +13,5 @@ include_directories(${CMAKE_SOURCE_DIR})
 set(COMMLIBS uuid numa pthread dl)
 
 add_executable(nvmfhost main.cpp)
-
-target_link_libraries(nvmfhost ${COMMLIBS})
+link_directories(/home/wayne/delivery/spdk/build/lib/)
+target_link_libraries(nvmfhost ${COMMLIBS} /home/wayne/delivery/spdk/build/lib/libspdk_env_dpdk.a)
