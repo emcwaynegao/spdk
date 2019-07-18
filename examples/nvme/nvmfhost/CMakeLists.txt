@@ -80,7 +80,8 @@ link_directories(${CMAKE_SOURCE_DIR}/../../../build/lib/ ${CMAKE_SOURCE_DIR}/../
 target_link_libraries(nvmfhost ${COMMLIBS} ${CMAKE_SOURCE_DIR}/../../../build/lib/libspdk_env_dpdk.a
         ${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_eal.a
         ${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_mempool.a
-        ${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_ring.a numa
+        ${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_ring.a
+	numa
 	${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_pci.a
 	${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_bus_pci.a
 	${CMAKE_SOURCE_DIR}/../../../dpdk/build/lib/librte_bus_vdev.a
